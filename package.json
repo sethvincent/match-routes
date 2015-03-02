@@ -1,0 +1,22 @@
+{
+  "name": "match-routes",
+  "description": "",
+  "version": "1.0.0",
+  "repository": {
+    "url": "git://github.com/sethvincent/match-routes.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "start": "node example.js"
+  },
+  "dependencies": {
+    "extend": "^2.0.0",
+    "http-hash": "^1.1.0"
+  },
+  "devDependencies": {
+    "response": "git://github.com/mikeal/response",
+    "tape": "^3.5.0",
+    "test-server-request": "^3.0.0"
+  }
+}
