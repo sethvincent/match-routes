@@ -1,6 +1,6 @@
 # match-routes
 
-a simple server-side router based on http-hash.
+a simple server-side router based on [http-hash](https://github.com/Matt-Esch/http-hash).
 
 ## api
 
