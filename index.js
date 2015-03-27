@@ -5,7 +5,7 @@ module.exports = function () {
   var hash = require('http-hash')()
   var router = { hash: hash }
 
-  router.set = function route (name, handler) {
+  router.on = router.set = function route (name, handler) {
     return hash.set(name, handler)
   }
 
