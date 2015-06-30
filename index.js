@@ -16,10 +16,9 @@ module.exports = function () {
 
     if (!route.handler) return false
 
-    opts = extend(opts, {
+    opts = extend(opts, parsedUrl, {
       params: route.params,
-      splat: route.splat,
-      parsedUrl: parsedUrl
+      splat: route.splat
     })
 
     route.handler(req, res, opts)

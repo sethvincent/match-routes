@@ -9,7 +9,30 @@ a simple server-side router based on [http-hash](https://github.com/Matt-Esch/ht
 
 `callback` is called with three arguments, `req`, `res`, and `options`
 
-`options` includes `params`, `splats`, and `parsedUrl` objects
+The `options` object includes `params`, `splat`, and all the properties returned by `url.parse()` and will look something like this:
+
+```
+{ protocol: null,
+  slashes: null,
+  auth: null,
+  host: null,
+  port: null,
+  hostname: null,
+  hash: null,
+  search: null,
+  query: null,
+  pathname: '/oh/awesome',
+  path: '/oh/awesome',
+  href: '/oh/awesome',
+  parse: [Function],
+  format: [Function],
+  resolve: [Function],
+  resolveObject: [Function],
+  parseHost: [Function],
+  params: { id: 'awesome' },
+  splat: null 
+}
+```
 
 Example:
 
